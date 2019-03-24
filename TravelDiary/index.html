@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./app/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="./app/assets/css/style.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<!--for angular library-->
+
+<script src="./app/assets/js/angular.min.js"></script>
+<script src="./app/assets/js/angular-route.min.js"></script>
+<script src="./app/assets/js/ui-bootstrap-tpls-0.14.3.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.min.js"></script>-->
+
+<!--Angular library end-->
+
+<!--angular main app js file-->
+
+<script src="./app/app.module.js"></script>
+
+</head>
+
+<body ng-app="travelDiary">
+
+ <div ng-include="'./app/shared/headerView.htm'"></div> 
+
+  <div ng-view></div>
+
+ <div ng-include="'./app/shared/footerView.htm'"></div>
+
+ <script src="./app/assets/js/jquery.min.js"></script>
+ <script src="./app/assets/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
